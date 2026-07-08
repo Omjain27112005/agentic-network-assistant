@@ -1,0 +1,44 @@
+# =============================================
+# Python Dependencies — All Services
+# =============================================
+# Install: pip install -r requirements.txt
+
+# --- Web Framework ---
+fastapi==0.111.0
+uvicorn[standard]==0.30.1    # ASGI server with WebSocket support
+websockets==12.0
+
+# --- Data Validation ---
+pydantic==2.7.1
+pydantic-settings==2.3.1     # Settings from .env files
+
+# --- Kafka ---
+confluent-kafka==2.4.0       # Official Confluent Kafka Python client
+
+# --- Redis ---
+redis==5.0.4                 # Redis Python client
+
+# --- PostgreSQL ---
+sqlalchemy==2.0.30           # ORM for PostgreSQL
+asyncpg==0.29.0              # Async PostgreSQL driver
+psycopg2-binary==2.9.9       # Sync PostgreSQL driver
+
+# --- Groq LLM ---
+groq==0.9.0                  # Official Groq Python SDK
+
+# --- HTTP Client (Jira integration) ---
+httpx==0.27.0                # Async HTTP client
+requests==2.32.3             # Sync HTTP client
+
+# --- Utilities ---
+python-dotenv==1.0.1         # Load .env files
+python-dateutil==2.9.0       # Date parsing utilities
+
+# --- Logging ---
+structlog==24.2.0            # Structured JSON logging
+
+# --- Testing ---
+pytest==8.2.2
+pytest-asyncio==0.23.7
+pytest-mock==3.14.0
+httpx==0.27.0                # For FastAPI TestClient
