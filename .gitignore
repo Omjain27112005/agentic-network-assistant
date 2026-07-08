@@ -1,0 +1,68 @@
+# =============================================
+# .gitignore — Agentic Network Assistant
+# =============================================
+
+# --- Environment & Secrets ---
+.env
+*.env
+!.env.example         # Always commit the example template
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyc
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+ENV/
+.env/
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+*.coverage
+coverage.xml
+
+# --- IDE & Editors ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Node / React Frontend ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/build/
+*.local
+
+# --- Docker ---
+.docker/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Database ---
+*.db
+*.sqlite3
+
+# --- Misc ---
+*.bak
+.tmp/
